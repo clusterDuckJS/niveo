@@ -1,0 +1,53 @@
+:root {
+    --color-primary: #1e3fae;
+    --color-primary-light-50: #1e3fae1a;
+    --color-primary-dark: #2666A3;
+    --color-bg: white;
+    --color-text: #212529;
+    --color-text-secondary: #757575;
+    --color-success: #008731;
+    --color-error: #DC3545;
+    --color-error-light-100: #FEE6E5;
+    --font-family: "Source Sans 3", sans-serif;
+    --border-color: gainsboro;
+    --border-color-light-50: #F7F7F7;
+    --color-sidenav-text: #C2C7D0;
+    --color-hover: #3F3F3F;
+
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: #242424;
+    background-color: white;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* start---------------CSS resets---------------start */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+    font: inherit;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* end---------------CSS resets---------------end */
+
+#root {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    border: 1px solid blue;
+    min-height: 100vh;
+}
+
