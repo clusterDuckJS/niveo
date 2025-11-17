@@ -1,7 +1,30 @@
 .hero-container {
-    min-height: 60vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/src/assets/hero-bg.jpg'); /* update path */
+  min-height: 60vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+
+  span.tag{
+    padding: 2px 10px;
+    background-color: #1e3fae;
+    opacity: 0.9;
+    width: fit-content;
+    border-radius: 2rem;
+  }
+
+  p,
+  h1,
+  h3, span {
+    color: white;
+    
+  }
+
+  h1 {
+    font-weight: 600;
+  }
 }
