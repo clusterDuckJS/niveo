@@ -18,17 +18,72 @@
     color: #242424;
     background-color: white;
 
+    --step--2: clamp(0.7rem, 0.25vw + 0.55rem, 0.8rem);
+    /* ~11–13px */
+    --step--1: clamp(0.8rem, 0.35vw + 0.65rem, 0.9rem);
+    /* ~13–14px */
+    --step-0: clamp(0.9rem, 0.5vw + 0.7rem, 1rem);
+    /* ~14–16px */
+    --step-1: clamp(1.05rem, 1vw + 0.7rem, 1.15rem);
+    /* ~16–18px */
+    --step-2: clamp(1.2rem, 1.5vw + 0.75rem, 1.5rem);
+    /* ~19–24px */
+    --step-3: clamp(1.4rem, 2vw + 0.8rem, 1.6rem);
+    /* ~22–26px */
+    --step-4: clamp(1.6rem, 3.2vw + 0.85rem, 2rem);
+    /* ~26–32px */
+    --step-5: clamp(1.8rem, 4vw + 0.9rem, 2.8rem);
+
+    --font-sans: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* ============================== */
+h1 {
+    font-size: var(--step-5);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+h2 {
+    font-size: var(--step-4);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: var(--step-3);
+}
+
+h4 {
+    font-size: var(--step-2);
+    margin-bottom: 1rem;
+}
+
+p,
+li,
+a,
+span {
+    font-size: var(--step-1);
+}
+
+small {
+    font-size: var(--step--2);
+}
+
+/* =================================================== */
+
+
 /* start---------------CSS resets---------------start */
 * {
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     font: inherit;
 }
 
@@ -47,53 +102,13 @@
 body {
     margin: 0;
     display: flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     min-height: 100vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-small {
-    color: var(--color-text);
-}
-
-h1 {
-    font-size: clamp(1.75rem, 5vw, 36px);
-}
-
-h2 {
-    font-size: clamp(26px, 4vw, 30px);
-}
-
-h3 {
-    font-size: clamp(22px, 1.4vw, 26px);
-}
-
-h4 {
-    font-size: clamp(20px, 1.19vw, 22px);
-}
-
-h5 {
-    font-size: clamp(18px, 1.08vw, 20px);
-}
-
-h6 {
-    font-size: clamp(16px, 0.97vw, 18px);
-}
-
-p {
-    font-size: clamp(16px, 0.86vw, 16px);
-}
-
-small {
-    color: var(--color-text);
-    font-size: clamp(12px, 0.75vw, 14px);
-    font-weight: 500;
+section {
+    padding: 5rem;
+    width: 100%;
 }
 
 input,
@@ -103,3 +118,97 @@ select {
     font: inherit;
 }
 
+/* Buttons */
+button,
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+button, a.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    height: fit-content;
+
+    &.primary {
+        background-color: var(--color-primary);
+        color: white;
+    }
+
+    &.secondary {
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        border: 1px solid var(--color-text);
+    }
+
+    &.blur {
+        background: transparent;
+        color: white;
+        border: 1px solid white;
+        backdrop-filter: blur(4px);
+    }
+
+
+}
+
+/* svg */
+.svg-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--color-primary-light-50);
+    margin-bottom: 1rem;
+
+    &.round{
+        border-radius: 5rem;
+    }
+
+    &.md {
+        svg {
+            font-size: 24px;
+        }
+    }
+
+    &.lg{
+        padding: 1rem;
+        svg{
+            font-size: 40px;
+        }
+    }
+
+    svg{
+        color: var(--color-primary);
+    }
+}
+
+
+/* Chips */
+span.tag {
+    display: flex;
+    padding: 2px 10px;
+    opacity: 0.9;
+    width: fit-content;
+    border-radius: 2rem;
+
+    &.primary {
+        font-weight: 500;
+        color: white;
+        background-color: var(--color-primary);
+    }
+}

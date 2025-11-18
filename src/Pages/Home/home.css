@@ -3,9 +3,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+
+        h2 {
+            font-weight: 700;
+        }
 
         .products-container {
             padding: 1rem;
+            text-align: left;
             display: flex;
             justify-content: center;
             gap: 2rem;
@@ -15,7 +21,7 @@
 
     section.innovation {
         color: white;
-        background-color: #1e3fae;
+        background-color: #173186;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,26 +33,10 @@
 
         .innovations-container {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: center;
             gap: 2rem;
-
-            .innovation-card {
-                border: 1px solid gainsboro;
-                background-color: #b1b0b021;
-                backdrop-filter: blur(4px);
-                padding: 1.5rem;
-                border-radius: 0.5rem;
-                width: clamp(318px, 100%, 660px);
-
-                img {
-                    width: 100%;
-                    height: 200px;
-                    object-fit: cover;
-                }
-            }
+            margin: 1rem 0;
         }
-
-
 
         h2,
         h3,
@@ -54,15 +44,134 @@
         p {
             color: white;
         }
+    }
 
+    section.dealer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #b7c2e180;
 
-        span.tag small {
-            background-color: #ffffff33;
-            color: white;
-            padding: 0.25rem 0.5rem;
-            border-radius: 5rem;
+        .dealers-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-top: 1rem;
 
+            .dealer-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: white;
+                padding: 2.5rem;
+                border: 1px solid gainsboro;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                border-radius: 0.5rem;
+                border: 1px solid gainsboro;
+
+                h2 {
+                    font-weight: 600;
+                }
+
+                p {
+                    margin-bottom: 1rem;
+                }
+
+                a{
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
         }
+    }
 
+    section.choice {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .choice-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+
+            .choice-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .svg-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1rem;
+                    background-color: gainsboro;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    section.contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+
+        .get-started {
+
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.gettyimages.com/id/2183509884/photo/group-of-medical-professionals.jpg?b=1&s=2048x2048&w=0&k=20&c=XlPqfShISo7SqDu7GyhDgnmHCOh0Nbh6cc1BlYZZD78=');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+
+            h2,
+            h3 {
+                color: white;
+            }
+
+            .btn-wrapper {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 1rem;
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    padding: 0.75rem 1.5rem;
+                    font-size: 1rem;
+                    background-color: #1e3fae;
+                    color: white;
+                    border: none;
+                    border-radius: 0.5rem;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: #163080;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*======== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 768px) {
+    .main-container.home {
+        .innovation {
+            .innovations-container {
+                flex-wrap: wrap;
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 import React, { use } from 'react'
 import './card.css'
-import { LuCircleCheckBig, LuStethoscope } from "react-icons/lu";
+import { LuArrowRight, LuCircleCheckBig } from "react-icons/lu";
 import { GoArrowRight } from 'react-icons/go';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ function Card({ title, desc, image, features, linkTo = "/products", icon: Icon }
     const navigate = useNavigate();
     return (
         <div className="product-card">
-            <div className="product-icon-wrapper">
+            <div className="svg-wrapper md">
                 {Icon && <Icon />}
             </div>
             <h4>{title}</h4>
@@ -23,8 +23,8 @@ function Card({ title, desc, image, features, linkTo = "/products", icon: Icon }
                     </li>
                 ))}
             </ul>
-            <button onClick={() => navigate(linkTo)} className="card-btn">
-                View Products <GoArrowRight />
+            <button className='secondary' onClick={() => navigate(linkTo)} >
+                View Products <LuArrowRight />
             </button>
         </div>
     )

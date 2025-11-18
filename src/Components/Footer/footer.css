@@ -1,0 +1,42 @@
+footer {
+
+    .footer-details {
+        display: flex;
+        flex-wrap: wrap;
+
+        .about {
+            display: flex;
+            flex-direction: column;
+
+            .name-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                img {
+                    width: 40px;
+                }
+
+                h4 {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .quick-links-wrapper {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+}

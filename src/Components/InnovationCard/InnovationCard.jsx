@@ -7,17 +7,17 @@ function InnovationCard({ title, short, image, tag, long, icon: Icon, linkTo }) 
     const navigate = useNavigate();
   return (
     <div className="innovation-card" onClick={() => linkTo && navigate(linkTo)}>
-      <div className="product-icon-wrapper">
+      <div className="svg-wrapper md">
         {Icon && <Icon />}
       </div>
 
       <h4>{title}</h4>
-      <p>{short}</p>
+      <p>{short}</p> 
 
       <img src={image} alt={title} />
 
       {tag && (
-        <span className="tag">
+        <span className="tag primary">
           <small>{tag}</small>
         </span>
       )}

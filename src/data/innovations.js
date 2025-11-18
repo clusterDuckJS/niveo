@@ -1,4 +1,4 @@
-import { LuWind } from "react-icons/lu";
+import { LuHeart, LuWind } from "react-icons/lu";
 
 const innovations = [
   {
@@ -16,7 +16,7 @@ const innovations = [
     long: "Non-invasive respiratory support combining CPAP and HFNC for neonates and pediatric patients.",
     image: "https://media.gettyimages.com/id/1495378388/photo/prenatal-check-up.jpg?b=1&s=2048x2048&w=0&k=20&c=wpAy7n2_pgYHmvv2_c0slqfjcxVjAH7f07SDOvhHSo0=",
     tag: "WHO Recognized",
-    icon: LuWind,
+    icon: LuHeart,
     linkTo: "/innovations/saans"
   },
   {
@@ -25,7 +25,7 @@ const innovations = [
     long: "Portable fetal monitoring system for continuous, non-invasive monitoring during pregnancy and labor.",
     image: "https://media.gettyimages.com/id/2204423732/photo/blue-uv-light-therapy-in-the-nicu.jpg?b=1&s=2048x2048&w=0&k=20&c=UPJ_Hd6kUXUjitd5FhFiZtsfSYfo7jva2DbCXXLT4q4=",
     tag: "Advanced Monitoring",
-    icon: LuWind,
+    icon: LuHeart,
     linkTo: "/innovations/fetal-lite"
   }
 ];
