@@ -1,5 +1,72 @@
-.innovation.main-container{
-    .hero-container{
+.innovation.main-container {
+    .hero-container {
         min-height: 40vh;
+    }
+
+    .innovations-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .card {
+            padding: 0;
+
+            .card-wrapper {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                .details-wrapper {
+                    padding: 2rem;
+
+                    .tags-container {
+                        display: flex;
+                        gap: 0.2rem;
+                        flex-wrap: wrap;
+                    }
+                }
+
+                .img-tag-wrapper {
+                    min-height: 300px;
+                    position: relative;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .tag.primary {
+                        position: absolute;
+                        bottom: 2rem;
+                        left: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+    section.dealer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .btn-wrapper{
+            button.blur{
+                color: var(--color-text);
+                border: 1px solid gainsboro;
+            }
+        }
+    }
+}
+
+/*======== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 768px) {
+    .innovation.main-container {
+        .innovations-wrapper {
+            .card {
+                .card-wrapper {
+                    grid-template-columns: none
+                }
+            }
+        }
     }
 }

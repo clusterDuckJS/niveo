@@ -1,5 +1,80 @@
-.about.main-container{
-    .hero-container{
+.about.main-container {
+    .hero-container {
         min-height: 40vh;
+
+    }
+
+    section.mission {
+        background-color: var(--color-primary-light-50);
+
+        .card-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+    }
+
+    section.core-values {
+        .value-container {
+            display: flex;
+            gap: 2rem;
+
+            .value-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    section.partnerships {
+        background-color: var(--color-primary-light-50);
+
+        .card-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+
+            .heading-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+        }
+    }
+    section.partner{
+        background-color: var(--color-primary-dark);
+    }
+
+}
+
+/*======== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 768px) {
+    section.mission {
+        background-color: var(--color-primary-light-50);
+
+        .card-wrapper {
+            flex-direction: column;
+            align-items: center;
+            /* .card{
+                max-width: 100%;
+            } */
+        }
+    }
+
+    section.core-values {
+        .value-container {
+            flex-direction: column;
+        }
+    }
+
+    section.partnerships {
+
+        .card-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }

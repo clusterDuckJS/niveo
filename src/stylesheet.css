@@ -1,7 +1,7 @@
 :root {
     --color-primary: #1e3fae;
     --color-primary-light-50: #1e3fae1a;
-    --color-primary-dark: #2666A3;
+    --color-primary-dark: #173186;
     --color-bg: white;
     --color-text: #212529;
     --color-text-secondary: #757575;
@@ -70,15 +70,68 @@ li,
 a,
 span {
     font-size: var(--step-1);
+    list-style: none;
 }
 
 small {
     font-size: var(--step--2);
 }
 
+/* h1,h2,h3,h4,p,li,a,small{
+    color: var(--color-text);
+} */
+
 /* =================================================== */
-.bold-5{
+/* background colors */
+.bg-light {
+    background-color: var(--color-primary-light-50);
+}
+
+.bg-dark {
+    background-color: var(--color-primary-dark);
+}
+
+/* Text styles */
+.center {
+    text-align: center;
+}
+
+.bold-5 {
     font-weight: 500;
+}
+
+.white {
+    color: white;
+}
+
+/* Margins */
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.gp-1 {
+    gap: 1rem;
 }
 
 /* start---------------CSS resets---------------start */
@@ -136,11 +189,13 @@ a {
     flex-wrap: wrap;
 }
 
-button, a.btn {
+button,
+a.btn {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    flex-wrap: wrap;
     border-radius: 0.5rem;
     padding: 0.75rem 2rem;
     border: none;
@@ -176,26 +231,35 @@ button, a.btn {
     border-radius: 0.5rem;
     padding: 0.5rem;
     background-color: var(--color-primary-light-50);
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 
-    &.round{
+    &.round {
         border-radius: 5rem;
     }
 
-    &.md {
+    &.sm {
         svg {
             font-size: 24px;
         }
     }
 
-    &.lg{
+    &.md {
         padding: 1rem;
-        svg{
+
+        svg {
+            font-size: 32px;
+        }
+    }
+
+    &.lg {
+        padding: 1rem;
+
+        svg {
             font-size: 40px;
         }
     }
 
-    svg{
+    svg {
         color: var(--color-primary);
     }
 }
@@ -216,18 +280,37 @@ span.tag {
     }
 }
 
+/* CARD */
+.card {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid gainsboro;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+}
+
+.w-500 {
+    max-width: 32rem;
+}
+
 
 /*======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
 @media screen and (max-width: 1024px) {
-section{
-        padding: 2rem;
+    section {
+        padding: 5rem 2rem;
     }
 }
 
 
 /*======== MEDIA QUERIES (SMALL DEVICES) ======== */
 @media screen and (max-width: 768px) {
-    section, footer{
-        padding: 1rem;
+
+    section,
+    footer {
+        padding: 5rem 1rem;
+    }
+
+    .card {
+        max-width: 100%;
     }
 }

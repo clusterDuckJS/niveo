@@ -21,7 +21,7 @@
 
     section.innovation {
         color: white;
-        background-color: #173186;
+        background-color: var(--color-primary-dark);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -35,7 +35,6 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
-            margin: 1rem 0;
         }
 
         h2,
@@ -55,9 +54,11 @@
 
         .dealers-wrapper {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             gap: 2rem;
             margin-top: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
 
             .dealer-card {
                 display: flex;
@@ -115,9 +116,6 @@
                     padding: 1rem;
                     background-color: gainsboro;
                     border-radius: 50%;
-                    svg{
-                        font-size: 32px;
-                    }
                 }
             }
         }
@@ -142,32 +140,6 @@
             h2,
             h3 {
                 color: white;
-            }
-
-            .btn-wrapper {
-                display: flex;
-                gap: 1rem;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-top: 1rem;
-
-                button {
-                    display: flex;
-                    align-items: center;
-                    gap: 0.5rem;
-                    padding: 0.75rem 1.5rem;
-                    font-size: 1rem;
-                    background-color: #1e3fae;
-                    color: white;
-                    border: none;
-                    border-radius: 0.5rem;
-                    cursor: pointer;
-                    transition: background-color 0.3s ease;
-
-                    &:hover {
-                        background-color: #163080;
-                    }
-                }
             }
         }
         .contact-details{
@@ -207,7 +179,13 @@
         }
     }
 
+    /* .dealer-card{
+        max-width: 100%;
+    } */
+
     .contact-details{
         flex-wrap: wrap;
+        flex-direction: column;
+
     }
 }

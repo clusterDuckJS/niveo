@@ -29,7 +29,7 @@ function Home() {
       {/* PRODUCTS */}
       <section className='products'>
         <h2>Our Product Categories</h2>
-        <p>Comprehensive healthcare solutions across critical care, wound care, and<br /> respiratory therapy</p>
+        <p className='mb-2'>Comprehensive healthcare solutions across critical care, wound care, and<br /> respiratory therapy</p>
         <div className='products-container'>
           {products.map((item, index) => (
             <Card
@@ -47,12 +47,12 @@ function Home() {
 
       {/* INNOVATION */}
       <section className='innovation'>
-        <span className="tag primary">
+        <span className="tag primary mb-1">
           <small>WHO Recognized Technology</small>
         </span>
         <h2>Featured Innovations from Innaccel</h2>
-        <p>World-class medical technology recognized by WHO and winning numerous awards</p>
-        <div className="innovations-container">
+        <p className='mb-3'>World-class medical technology recognized by WHO and winning numerous awards</p>
+        <div className="innovations-container mb-2">
           {innovations.map((item, index) => (
             <InnovationCard
               key={index}
@@ -66,14 +66,14 @@ function Home() {
 
       {/* AUTHORIZED DEALER */}
       <section className='dealer'>
-        <span className="tag primary">
+        <span className="tag primary mb-1">
           <small>Trusted Partnerships</small>
         </span>
         <h2>Authorized Dealer</h2>
-        <p>We are proud authorized dealers for leading healthcare equipment manufacturers</p>
+        <p className='mb-2'>We are proud authorized dealers for leading healthcare equipment manufacturers</p>
         <div className="dealers-wrapper">
           <div className="dealer-card">
-            <div className="svg-wrapper lg round">
+            <div className="svg-wrapper lg round mb-1">
               <LuCircleCheckBig />
             </div>
             <h2>Innaccel</h2>
@@ -84,7 +84,7 @@ function Home() {
           </div>
 
           <div className="dealer-card">
-            <div className="svg-wrapper lg round">
+            <div className="svg-wrapper lg round mb-1">
               <LuCircleCheckBig />
             </div>
             <h2>Yafho</h2>
@@ -99,10 +99,10 @@ function Home() {
       {/* CHOOSE US */}
       <section className='choice'>
         <h2>Why Choose Niveo Health Care?</h2>
-        <p>Your trusted partner for quality healthcare equipment and exceptional service</p>
+        <p className='mb-1'>Your trusted partner for quality healthcare equipment and exceptional service</p>
         <div className="choice-container">
           <div className="choice-wrapper">
-            <div className="svg-wrapper md">
+            <div className="svg-wrapper md mb-1">
               <LuCircleCheckBig />
             </div>
             <h3>Quality Products</h3>
@@ -110,7 +110,7 @@ function Home() {
           </div>
 
           <div className="choice-wrapper">
-            <div className="svg-wrapper md">
+            <div className="svg-wrapper md mb-1">
               <LuCircleCheckBig />
             </div>
             <h3>Biomedical Engineering</h3>
@@ -118,7 +118,7 @@ function Home() {
           </div>
 
           <div className="choice-wrapper">
-            <div className="svg-wrapper md">
+            <div className="svg-wrapper md mb-1">
               <LuCircleCheckBig />
             </div>
             <h3>Authorized Dealer</h3>
@@ -126,7 +126,7 @@ function Home() {
           </div>
 
           <div className="choice-wrapper">
-            <div className="svg-wrapper md">
+            <div className="svg-wrapper md mb-1">
               <LuCircleCheckBig />
             </div>
             <h3>24/7 Support</h3>
@@ -138,10 +138,10 @@ function Home() {
       <div className="contact">
         <div className="get-started">
           <h2>Ready to Get Started?</h2>
-          <h3>Contact us today to discuss your healthcare equipment needs</h3>
+          <h3 className='mb-2'>Contact us today to discuss your healthcare equipment needs</h3>
           <div className="btn-wrapper">
-            <button onClick={() => navigate('/contact')}><LuPhone /> Contact Us</button>
-            <button onClick={() => navigate('/services')}>Learn About Our Services</button>
+            <button className='primary' onClick={() => navigate('/contact')}><LuPhone /> Contact Us</button>
+            <button className='blur' onClick={() => navigate('/services')}>Learn About Our Services</button>
           </div>
         </div>
         <div className="contact-details">

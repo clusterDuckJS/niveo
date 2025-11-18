@@ -16,7 +16,7 @@ function Footer() {
         </div>
         <div className="quick-links-wrapper">
           <div className="list-wrapper">
-            <h6>Products</h6>
+            <h6 className='bold-5 mb-1'>Products</h6>
             <ul>
               <li><Link to="/innovations">Innovations</Link></li>
               <li><Link to="/innovations">Critical Care</Link></li>
@@ -26,7 +26,7 @@ function Footer() {
           </div>
 
           <div className="list-wrapper">
-            <h6>Company</h6>
+            <h6 className='bold-5 mb-1'>Company</h6>
             <ul>
               <li><Link to="/innovations">About Us</Link></li>
               <li><Link to="/innovations">Services</Link></li>
@@ -35,7 +35,7 @@ function Footer() {
           </div>
 
           <div className="list-wrapper">
-            <h6>Contact</h6>
+            <h6 className='bold-5 mb-1'>Contact</h6>
             <ul>
               <li>+91 9567679964</li>
               <li>info@niveohealthcare.com</li>
@@ -43,7 +43,7 @@ function Footer() {
           </div>
 
           <div className="list-wrapper">
-            <h6>Partners</h6>
+            <h6 className='bold-5 mb-1'>Partners</h6>
             <ul>
               <li><Link to="/innovations">Yafho</Link></li>
               <li><Link to="/innovations">Innaccel</Link></li>

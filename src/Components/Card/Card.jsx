@@ -8,7 +8,7 @@ function Card({ title, desc, image, features, linkTo = "/products", icon: Icon }
     const navigate = useNavigate();
     return (
         <div className="product-card">
-            <div className="svg-wrapper md">
+            <div className="svg-wrapper md mb-1">
                 {Icon && <Icon />}
             </div>
             <h4>{title}</h4>
