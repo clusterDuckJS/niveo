@@ -53,7 +53,7 @@ function Footer() {
       </div>
       <div className="rights">
         <small>© 2025 Niveohealthcare Private Limited. All rights reserved</small>
-        <Link to="/contact"><small>Contact Us</small></Link>
+        <Link to="/contact">Contact Us</Link>
       </div>
     </footer>
   )

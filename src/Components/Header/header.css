@@ -40,6 +40,8 @@
 
     text-decoration: none;
     font-weight: 500;
+    font-size: var(--step-0);
+    color: var(--color-text);
 }
 
 /* Hide hamburger on desktop */
@@ -49,6 +51,7 @@
     border: none;
     font-size: 26px;
     cursor: pointer;
+    padding: 0;
 }
 
 /* ---------- MOBILE STYLES ---------- */
@@ -66,7 +69,6 @@
         left: 0;
         background: white;
         padding: 20px;
-        border-radius: 10px;
         display: none;
         flex-direction: column;
         gap: 15px;

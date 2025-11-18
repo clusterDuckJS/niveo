@@ -78,7 +78,7 @@ function Home() {
             </div>
             <h2>Innaccel</h2>
             <p>Premium medical equipment and solutions</p>
-            <a href="https://innaccel.com/" target="_blank" rel="noopener noreferrer">
+            <a className='btn secondary' href="https://innaccel.com/" target="_blank" rel="noopener noreferrer">
               Visit Website <LuArrowRight />
             </a>
           </div>
@@ -99,11 +99,10 @@ function Home() {
       {/* CHOOSE US */}
       <section className='choice'>
         <h2>Why Choose Niveo Health Care?</h2>
-        <h3>Your trusted partner for quality healthcare equipment and exceptional service</h3>
+        <p>Your trusted partner for quality healthcare equipment and exceptional service</p>
         <div className="choice-container">
-
           <div className="choice-wrapper">
-            <div className="svg-wrapper">
+            <div className="svg-wrapper md">
               <LuCircleCheckBig />
             </div>
             <h3>Quality Products</h3>
@@ -111,7 +110,7 @@ function Home() {
           </div>
 
           <div className="choice-wrapper">
-            <div className="svg-wrapper">
+            <div className="svg-wrapper md">
               <LuCircleCheckBig />
             </div>
             <h3>Biomedical Engineering</h3>
@@ -119,7 +118,7 @@ function Home() {
           </div>
 
           <div className="choice-wrapper">
-            <div className="svg-wrapper">
+            <div className="svg-wrapper md">
               <LuCircleCheckBig />
             </div>
             <h3>Authorized Dealer</h3>
@@ -127,7 +126,7 @@ function Home() {
           </div>
 
           <div className="choice-wrapper">
-            <div className="svg-wrapper">
+            <div className="svg-wrapper md">
               <LuCircleCheckBig />
             </div>
             <h3>24/7 Support</h3>
@@ -136,7 +135,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="contact">
+      <div className="contact">
         <div className="get-started">
           <h2>Ready to Get Started?</h2>
           <h3>Contact us today to discuss your healthcare equipment needs</h3>
@@ -148,24 +147,24 @@ function Home() {
         <div className="contact-details">
           <div className="contact-item">
             <LuPhone />
-            <h3>Phone</h3>
+            <p className='bold-5'>Call Us</p>
             <p>+91 9567679964</p>
           </div>
 
           <div className="contact-item">
             <LuMail />
-            <h3>Email</h3>
+            <p className='bold-5'>Email</p>
             <p>info@niveohealthcare.com</p>
           </div>
 
           <div className="contact-item">
             <LuMapPin />
-            <h3>Visit Us</h3>
-            <p>Third floor, JC Chambers, 60/44, Panampilly Nagar, Kochi,
+            <p className='bold-5'>Visit Us</p>
+            <p>Third floor, JC Chambers,<br/> 60/44, Panampilly Nagar,<br/> Kochi,
               Ernakulam, Kerala 682036</p>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   )
 }

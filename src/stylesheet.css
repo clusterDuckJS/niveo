@@ -77,7 +77,9 @@ small {
 }
 
 /* =================================================== */
-
+.bold-5{
+    font-weight: 500;
+}
 
 /* start---------------CSS resets---------------start */
 * {
@@ -123,6 +125,7 @@ button,
 a {
     cursor: pointer;
     text-decoration: none;
+    font-size: var(--step-1);
 }
 
 .btn-wrapper {
@@ -210,5 +213,21 @@ span.tag {
         font-weight: 500;
         color: white;
         background-color: var(--color-primary);
+    }
+}
+
+
+/*======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+section{
+        padding: 2rem;
+    }
+}
+
+
+/*======== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 768px) {
+    section, footer{
+        padding: 1rem;
     }
 }

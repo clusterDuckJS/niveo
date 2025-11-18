@@ -97,12 +97,16 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
-            flex-wrap: wrap;
+            margin-top: 2rem;
 
             .choice-wrapper {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                h3{
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                }
 
                 .svg-wrapper {
                     display: flex;
@@ -111,25 +115,29 @@
                     padding: 1rem;
                     background-color: gainsboro;
                     border-radius: 50%;
+                    svg{
+                        font-size: 32px;
+                    }
                 }
             }
         }
     }
 
-    section.contact {
+    .contact {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        /* padding: 5rem 0; */
 
 
         .get-started {
-
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.gettyimages.com/id/2183509884/photo/group-of-medical-professionals.jpg?b=1&s=2048x2048&w=0&k=20&c=XlPqfShISo7SqDu7GyhDgnmHCOh0Nbh6cc1BlYZZD78=');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             width: 100%;
+            padding: 5rem 0;
 
             h2,
             h3 {
@@ -162,6 +170,24 @@
                 }
             }
         }
+        .contact-details{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            background-color: var(--color-primary-light-50);
+            padding: 2rem 0.5rem;
+            gap: 2rem;
+            .contact-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+                svg{
+                    font-size: 24px;
+                    color: var(--color-primary);
+                }
+            }
+        }
     }
 }
 
@@ -173,5 +199,15 @@
                 flex-wrap: wrap;
             }
         }
+    }
+
+    section.choice{
+        .choice-container{
+            flex-wrap: wrap;
+        }
+    }
+
+    .contact-details{
+        flex-wrap: wrap;
     }
 }
