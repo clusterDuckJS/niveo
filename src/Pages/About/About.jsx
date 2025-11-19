@@ -25,14 +25,14 @@ function About() {
       <section className="mission">
         <div className="card-wrapper">
           <div className="card flex-1 w-500">
-            <div className="svg-wrapper md round">
+            <div className="svg-wrapper mb-1 md round">
               <LuTarget />
             </div>
             <h3 className='bold-5 mb-1'>Our Mission</h3>
             <p>To advance healthcare technology by providing high-quality biomedical equipment and innovative solutions. We support hospitals, clinics, and healthcare providers with reliable medical technology, expert maintenance services, and skilled biomedical engineering support, ensuring better patient care and operational efficiency.</p>
           </div>
           <div className="card flex-1 w-500">
-            <div className="svg-wrapper md round">
+            <div className="svg-wrapper mb-1 md round">
               <LuEye />
             </div>
             <h3 className='bold-5 mb-1'>Our Vision</h3>
@@ -46,22 +46,22 @@ function About() {
         <p className='center mb-2'>The principles that guide everything we do</p>
         <div className="value-container">
           <div className="value-wrapper">
-            <div className="svg-wrapper md round"><LuCircleCheckBig /></div>
+            <div className="svg-wrapper mb-1 md round"><LuCircleCheckBig /></div>
             <h4 className='bold-5 center'>Quality</h4>
             <p className='center'>We never compromise on the quality of products and services we deliver</p>
           </div>
           <div className="value-wrapper">
-            <div className="svg-wrapper md round"><LuUsers /></div>
+            <div className="svg-wrapper mb-1 md round"><LuUsers /></div>
             <h4 className='bold-5 center'>Customer Focus</h4>
             <p className='center'>Our customers' needs and satisfaction are at the heart of everything we do</p>
           </div>
           <div className="value-wrapper">
-            <div className="svg-wrapper md round"><LuAward /></div>
+            <div className="svg-wrapper mb-1 md round"><LuAward /></div>
             <h4 className='bold-5 center'>Integrity</h4>
             <p className='center'>We conduct business with honesty, transparency, and ethical practices</p>
           </div>
           <div className="value-wrapper">
-            <div className="svg-wrapper md round"><LuCircleCheckBig /></div>
+            <div className="svg-wrapper mb-1 md round"><LuCircleCheckBig /></div>
             <h4 className='bold-5 center'>Excellence</h4>
             <p className='center'>We strive for excellence in every aspect of our operations</p>
           </div>
@@ -82,8 +82,8 @@ function About() {
                 <small>Premium Medical Equipment</small>
               </div>
             </div>
-            <p>As an authorized dealer for Innaccel, we bring you cutting-edge medical equipment designed for modern healthcare facilities. Innaccel's commitment to innovation and quality aligns perfectly with our mission to provide the best healthcare solutions.</p>
-            <a href="">Learn More About Innaccel</a>
+            <p className='mb-2'>As an authorized dealer for Innaccel, we bring you cutting-edge medical equipment designed for modern healthcare facilities. Innaccel's commitment to innovation and quality aligns perfectly with our mission to provide the best healthcare solutions.</p>
+            <a className='btn secondary' href="https://innaccel.com/">Learn More About Innaccel</a>
           </div>
           <div className="card w-500">
             <div className="heading-wrapper mb-1">
@@ -95,8 +95,8 @@ function About() {
                 <small>Advanced Healthcare Technology</small>
               </div>
             </div>
-            <p>Our partnership with Yafho enables us to offer advanced healthcare technology products that meet the highest standards of performance and reliability. Yafho's innovative solutions help healthcare providers deliver exceptional patient care.</p>
-            <a href="">Learn More About Yafho</a>
+            <p className='mb-2'>Our partnership with Yafho enables us to offer advanced healthcare technology products that meet the highest standards of performance and reliability. Yafho's innovative solutions help healthcare providers deliver exceptional patient care.</p>
+            <a className='btn secondary' href="https://www.yafho.com/">Learn More About Yafho</a>
           </div>
         </div>
       </section>

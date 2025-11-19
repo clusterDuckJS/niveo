@@ -1,5 +1,59 @@
-.services.main-container{
-    .hero-container{
+.services.main-container {
+    .hero-container {
         min-height: 40vh;
+    }
+
+    .services {
+        .card-container {
+            .card {
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    svg {
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+
+    section.service-process{
+        .value-container{
+            .value-wrapper{
+                .svg-wrapper{
+                    background-color: var(--color-primary);
+                    padding: 1.3rem 2rem;
+                    h3{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*======== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 768px) {
+
+    .services.main-container {
+        .services {
+            .card-container {
+                grid-template-columns: none;
+            }
+        }
+
+        section.why-choose-us {
+            .value-container {
+                flex-direction: column;
+            }
+        }
+
+        section.service-process{
+        .value-container{
+            flex-direction: column;
+        }
+    }
     }
 }

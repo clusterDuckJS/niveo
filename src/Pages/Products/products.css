@@ -1,5 +1,59 @@
-.products.main-container{
-    .hero-container{
+.products.main-container {
+    .hero-container {
         min-height: 40vh;
+    }
+
+    .products {
+        .cards-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 2rem;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            svg {
+                color: var(--color-primary);
+            }
+        }
+    }
+    section.partnerships{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card-wrapper{
+            max-width: 56rem;
+        }
+    }
+}
+
+/*======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+    .products.main-container {
+
+        .products {
+            .cards-wrapper {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+        }
+    }
+}
+
+
+/*======== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 768px) {
+
+    .products.main-container {
+
+        .products {
+            .cards-wrapper {
+                grid-template-columns: none;
+            }
+
+        }
     }
 }

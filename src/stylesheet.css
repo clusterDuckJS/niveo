@@ -96,6 +96,7 @@ small {
     text-align: center;
 }
 
+
 .bold-5 {
     font-weight: 500;
 }
@@ -130,8 +131,47 @@ small {
     flex: 1;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
+.column{
+    flex-direction: column;
+}
+.align-center{
+    align-items: center;
+}
+
+.height-fit{
+    height: fit-content;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+.gp-02 {
+    gap: 0.2rem;
+}
+
 .gp-1 {
     gap: 1rem;
+}
+
+.gp-2{
+    gap: 2rem;
+}
+
+/* Grid */
+.grid{
+    display: grid;
+}
+
+.col-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.col-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 /* start---------------CSS resets---------------start */
@@ -209,7 +249,7 @@ a.btn {
     &.secondary {
         background-color: var(--color-bg);
         color: var(--color-text);
-        border: 1px solid var(--color-text);
+        border: 1px solid gainsboro;
     }
 
     &.blur {
