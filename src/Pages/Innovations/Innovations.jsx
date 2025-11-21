@@ -2,6 +2,9 @@ import './innovations.css'
 import Hero from '../../Components/Hero/Hero'
 import { LuCircleCheckBig, LuHeart, LuPhone, LuWind } from 'react-icons/lu'
 import { useNavigate } from 'react-router-dom';
+import SANS from '../../assets/saans.png'
+import VAP from '../../assets/vap.webp'
+import FETAL from '../../assets/fetal.png'
 
 function Innovations() {
   const navigate = useNavigate();
@@ -30,8 +33,8 @@ function Innovations() {
                   </div>
                 </div>
                 <h6 className='mb-1'>World's first intelligent oral hygiene management system for ventilated patients</h6>
-                <p>VapCare is a high-tech medical device that assists patients who need respiratory therapy. It is applied in clinical settings or for home care to treat chronic respiratory diseases such as asthma, COPD, or post-surgical recovery. It maintains optimal respiratory function by providing controlled air or oxygen with moisture, which is necessary for easy breathing and prevention of airway dryness.</p>
-                <p>Key benefits:</p>
+                <p className='mb-1'>VapCare is a high-tech medical device that assists patients who need respiratory therapy. It is applied in clinical settings or for home care to treat chronic respiratory diseases such as asthma, COPD, or post-surgical recovery. It maintains optimal respiratory function by providing controlled air or oxygen with moisture, which is necessary for easy breathing and prevention of airway dryness.</p>
+                <p className='bold-5 mb-1'>Key benefits:</p>
                 <ul className='mb-1'>
                   <li><LuCircleCheckBig /> Intelligent oral hygiene management</li>
                   <li><LuCircleCheckBig /> Controlled air/oxygen with moisture</li>
@@ -46,7 +49,8 @@ function Innovations() {
                 </div>
               </div>
               <div className="img-tag-wrapper">
-                <img src="https://media.gettyimages.com/id/2177759074/photo/close-up-of-a-female-nurse-helping-a-woman-with-breathing-problems.jpg?b=1&s=2048x2048&w=0&k=20&c=pby1KA6dBTRm17mGVf9FGyLPvUNlV2X_5uCuqET017Q=" alt="" />
+                {/* <img src="https://media.gettyimages.com/id/2177759074/photo/close-up-of-a-female-nurse-helping-a-woman-with-breathing-problems.jpg?b=1&s=2048x2048&w=0&k=20&c=pby1KA6dBTRm17mGVf9FGyLPvUNlV2X_5uCuqET017Q=" alt="" /> */}
+                <img src={VAP} alt="" />
                 <span className='tag primary'><small>World's First Intelligent System</small></span>
               </div>
             </div>
@@ -65,8 +69,8 @@ function Innovations() {
                   </div>
                 </div>
                 <h6 className='mb-1'>Non-invasive respiratory support for neonates and pediatric patients</h6>
-                <p>VSAANS is a non-invasive respiratory support device for neonates and pediatric patients, combining CPAP and HFNC to manage breathing difficulties, improve oxygenation, and enhance lung function. It offers a safer, more comfortable alternative to invasive ventilation, supporting better clinical outcomes for infants and young children.</p>
-                <p>Key benefits:</p>
+                <p className='mb-1'>VSAANS is a non-invasive respiratory support device for neonates and pediatric patients, combining CPAP and HFNC to manage breathing difficulties, improve oxygenation, and enhance lung function. It offers a safer, more comfortable alternative to invasive ventilation, supporting better clinical outcomes for infants and young children.</p>
+                <p className='bold-5 mb-1'>Key benefits:</p>
                 <ul className='mb-1'>
                   <li><LuCircleCheckBig /> Combines CPAP and HFNC technology</li>
                   <li><LuCircleCheckBig /> Non-invasive respiratory support</li>
@@ -81,7 +85,8 @@ function Innovations() {
                 </div>
               </div>
               <div className="img-tag-wrapper">
-                <img src="https://media.gettyimages.com/id/2204423732/photo/blue-uv-light-therapy-in-the-nicu.jpg?b=1&s=2048x2048&w=0&k=20&c=UPJ_Hd6kUXUjitd5FhFiZtsfSYfo7jva2DbCXXLT4q4=" alt="" />
+                <img src={SANS} alt="" />
+                {/* <img src="https://media.gettyimages.com/id/2204423732/photo/blue-uv-light-therapy-in-the-nicu.jpg?b=1&s=2048x2048&w=0&k=20&c=UPJ_Hd6kUXUjitd5FhFiZtsfSYfo7jva2DbCXXLT4q4=" alt="" /> */}
                 <span className='tag primary'><small>WHO Recognized</small></span>
               </div>
             </div>
@@ -116,7 +121,8 @@ function Innovations() {
                 </div>
               </div>
               <div className="img-tag-wrapper">
-                <img src="https://media.gettyimages.com/id/1495378388/photo/prenatal-check-up.jpg?b=1&s=2048x2048&w=0&k=20&c=wpAy7n2_pgYHmvv2_c0slqfjcxVjAH7f07SDOvhHSo0=" alt="" />
+                <img src={FETAL} alt="" />
+                {/* <img src="https://media.gettyimages.com/id/1495378388/photo/prenatal-check-up.jpg?b=1&s=2048x2048&w=0&k=20&c=wpAy7n2_pgYHmvv2_c0slqfjcxVjAH7f07SDOvhHSo0=" alt="" /> */}
                 <span className='tag primary'><small>Superior Labour Monitoring</small></span>
               </div>
             </div>

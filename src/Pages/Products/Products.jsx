@@ -74,7 +74,7 @@ function Products() {
             </div>
           </div>
           <div className="card">
-            <h3>Infusion Pumps</h3>
+            <h3 className='bold-5'>Infusion Pumps</h3>
             <p className='mb-1'>Precision medication and fluid delivery systems</p>
             <p className='bold-5 mb-1'>Key Features:</p>
             <ul className='mb-1'>
@@ -130,7 +130,7 @@ function Products() {
               <span className='tag primary'><small>Pain Management</small></span>
             </div>
           </div>
-          <div className="card">
+          {/* <div className="card">
             <h3 className='bold-5'>Central Monitoring Systems</h3>
             <p className='mb-1'>Centralized patient monitoring and management</p>
             <p className='bold-5 mb-1'>Key Features:</p>
@@ -147,7 +147,7 @@ function Products() {
               <span className='tag primary'><small>Step-down Units</small></span>
               <span className='tag primary'><small>Emergency Departments</small></span>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

@@ -14,7 +14,7 @@ const innovations = [
     title: "SAANS",
     short: "WHO Innovative Health Technologies Compendium",
     long: "Non-invasive respiratory support combining CPAP and HFNC for neonates and pediatric patients.",
-    image: "https://media.gettyimages.com/id/1495378388/photo/prenatal-check-up.jpg?b=1&s=2048x2048&w=0&k=20&c=wpAy7n2_pgYHmvv2_c0slqfjcxVjAH7f07SDOvhHSo0=",
+    image: "https://media.gettyimages.com/id/2204423732/photo/blue-uv-light-therapy-in-the-nicu.jpg?b=1&s=2048x2048&w=0&k=20&c=UPJ_Hd6kUXUjitd5FhFiZtsfSYfo7jva2DbCXXLT4q4=",
     tag: "WHO Recognized",
     icon: LuHeart,
     linkTo: "/innovations/saans"
@@ -23,7 +23,7 @@ const innovations = [
     title: "FETAL LITE",
     short: "Superior labour monitoring experience",
     long: "Portable fetal monitoring system for continuous, non-invasive monitoring during pregnancy and labor.",
-    image: "https://media.gettyimages.com/id/2204423732/photo/blue-uv-light-therapy-in-the-nicu.jpg?b=1&s=2048x2048&w=0&k=20&c=UPJ_Hd6kUXUjitd5FhFiZtsfSYfo7jva2DbCXXLT4q4=",
+    image: "https://media.gettyimages.com/id/1495378388/photo/prenatal-check-up.jpg?b=1&s=2048x2048&w=0&k=20&c=wpAy7n2_pgYHmvv2_c0slqfjcxVjAH7f07SDOvhHSo0=",
     tag: "Advanced Monitoring",
     icon: LuHeart,
     linkTo: "/innovations/fetal-lite"

@@ -6,7 +6,7 @@ function InnovationCard({ title, short, image, tag, long, icon: Icon, linkTo }) 
 
     const navigate = useNavigate();
   return (
-    <div className="innovation-card" onClick={() => linkTo && navigate(linkTo)}>
+    <div className="innovation-card">
       <div className="svg-wrapper md mb-1">
         {Icon && <Icon />}
       </div>

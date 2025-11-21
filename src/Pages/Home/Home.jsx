@@ -61,7 +61,7 @@ function Home() {
           ))}
 
         </div>
-        <button className='primary'>View All Innovations <LuArrowRight /> </button>
+        <button className='primary' onClick={() => navigate('/innovations')}>View All Innovations <LuArrowRight /> </button>
       </section>
 
       {/* AUTHORIZED DEALER */}
