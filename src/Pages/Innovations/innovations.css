@@ -45,12 +45,14 @@
             }
         }
     }
-    section.dealer{
+
+    section.dealer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .btn-wrapper{
-            button.blur{
+
+        .btn-wrapper {
+            button.blur {
                 color: var(--color-text);
                 border: 1px solid gainsboro;
             }
@@ -58,8 +60,8 @@
     }
 }
 
-/*======== MEDIA QUERIES (SMALL DEVICES) ======== */
-@media screen and (max-width: 768px) {
+/*======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
     .innovation.main-container {
         .innovations-wrapper {
             .card {

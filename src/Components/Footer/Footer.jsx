@@ -35,18 +35,18 @@ function Footer() {
           </div>
 
           <div className="list-wrapper">
-            <h6 className='bold-5 mb-1'>Contact</h6>
-            <ul>
-              <li>+91 9567679964</li>
-              <li>info@niveohealthcare.com</li>
-            </ul>
-          </div>
-
-          <div className="list-wrapper">
             <h6 className='bold-5 mb-1'>Partners</h6>
             <ul>
               <li><Link to="/innovations">Yafho</Link></li>
               <li><Link to="/innovations">Innaccel</Link></li>
+            </ul>
+          </div>
+
+          <div className="list-wrapper">
+            <h6 className='bold-5 mb-1'>Contact</h6>
+            <ul>
+              <li>+91 9567679964</li>
+              <li>info@niveohealthcare.com</li>
             </ul>
           </div>
         </div>
