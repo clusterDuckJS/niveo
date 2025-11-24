@@ -7,6 +7,8 @@ import Contact from "./Pages/Contact/Contact"
 import Services from "./Pages/Services/Services"
 import Header from "./Components/Header/Header"
 import Footer from "./Components/Footer/Footer"
+import WoundProduct from "./Pages/WoundProduct/WoundProduct"
+import RespiratoryProducts from "./Pages/RespiratoryProducts/RespiratoryProducts"
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/products/respiratory" element={<RespiratoryProducts />} />
+          <Route path="/products/wound" element={<WoundProduct />} />
         </Routes>
         <Footer />
     </div>

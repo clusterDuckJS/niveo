@@ -1,8 +1,13 @@
 import './products.css'
 import Hero from '../../Components/Hero/Hero'
 import { LuCircleCheckBig, LuPhone } from 'react-icons/lu'
+// import { criticalProducts } from '../../data/criticalproducts'
+import ProductCard from '../../Components/ProductCard/ProductCard'
+import { criticalProducts } from '../../data/products'
+import { useNavigate } from 'react-router-dom'
 
 function Products() {
+  const navigate = useNavigate()
   return (
     <div className="products main-container">
       <Hero
@@ -16,138 +21,16 @@ function Products() {
         <h2 className='center'>Our Critical Care Products</h2>
         <p className='center mb-3'>Comprehensive range of critical care equipment from leading manufacturers</p>
         <div className="cards-wrapper">
-          <div className="card">
-            <h3 className='bold-5'>FETAL LITE</h3>
-            <p className='mb-1'>Superior labour monitoring experience - Advanced portable fetal monitoring system</p>
-            <p className='bold-5 mb-1'>Key Features:</p>
-            <ul className='mb-1'>
-              <li><LuCircleCheckBig /> Continuous fetal heart rate monitoring</li>
-              <li><LuCircleCheckBig /> Maternal well-being tracking</li>
-              <li><LuCircleCheckBig /> Portable and user-friendly</li>
-              <li><LuCircleCheckBig /> Non-invasive monitoring</li>
-              <li><LuCircleCheckBig /> Clinical and homecare use</li>
-            </ul>
-            <p className='bold-5 mb-1'>Applications:</p>
-            <div className="tags-container flex gp-02 wrap">
-              <span className='tag primary'><small>High-risk Pregnancies</small></span>
-              <span className='tag primary'><small>Labor Monitoring</small></span>
-              <span className='tag primary'><small>Routine Prenatal Check-ups</small></span>
-              <span className='tag primary'><small>Fetal Health Assessment</small></span>
-            </div>
-          </div>
-          <div className="card">
-            <h3 className='bold-5'>Patient Monitors</h3>
-            <p className='mb-1'>Advanced multi-parameter patient monitoring systems for ICU and critical care units</p>
-            <p className='bold-5 mb-1'>Key Features:</p>
-            <ul className='mb-1'>
-              <li><LuCircleCheckBig /> Real-time vital signs monitoring</li>
-              <li><LuCircleCheckBig /> ECG, SpO2, NIBP, Temperature</li>
-              <li><LuCircleCheckBig /> Alarm management system</li>
-              <li><LuCircleCheckBig /> Data recording and trending</li>
-              <li><LuCircleCheckBig /> Network connectivity</li>
-            </ul>
-            <p className='bold-5 mb-1'>Applications:</p>
-            <div className="tags-container flex gp-02 wrap">
-              <span className='tag primary'><small>ICU</small></span>
-              <span className='tag primary'><small>Emergency Rooms</small></span>
-              <span className='tag primary'><small>Operating Theaters</small></span>
-              <span className='tag primary'><small>Recovery Rooms</small></span>
-            </div>
-          </div>
-          <div className="card">
-            <h3 className='bold-5'>Ventilators</h3>
-            <p className='mb-1'>High-performance mechanical ventilation systems for respiratory support</p>
-            <p className='bold-5 mb-1'>Key Features:</p>
-            <ul className='mb-1'>
-              <li><LuCircleCheckBig /> Multiple ventilation modes</li>
-              <li><LuCircleCheckBig /> Pressure and volume control</li>
-              <li><LuCircleCheckBig /> Advanced monitoring</li>
-              <li><LuCircleCheckBig /> Pediatric and adult settings</li>
-              <li><LuCircleCheckBig /> Portable and stationary options</li>
-            </ul>
-            <p className='bold-5 mb-1'>Applications:</p>
-            <div className="tags-container flex gp-02 wrap">
-              <span className='tag primary'><small>ICU</small></span>
-              <span className='tag primary'><small>Emergency Care</small></span>
-              <span className='tag primary'><small>Transport</small></span>
-              <span className='tag primary'><small>Home Care</small></span>
-            </div>
-          </div>
-          <div className="card">
-            <h3 className='bold-5'>Infusion Pumps</h3>
-            <p className='mb-1'>Precision medication and fluid delivery systems</p>
-            <p className='bold-5 mb-1'>Key Features:</p>
-            <ul className='mb-1'>
-              <li><LuCircleCheckBig /> Accurate flow control</li>
-              <li><LuCircleCheckBig /> Drug library integration</li>
-              <li><LuCircleCheckBig /> Safety alarms</li>
-              <li><LuCircleCheckBig /> Multiple delivery modes</li>
-              <li><LuCircleCheckBig /> Battery backup</li>
-            </ul>
-            <p className='bold-5 mb-1'>Applications:</p>
-            <div className="tags-container flex gp-02 wrap">
-              <span className='tag primary'><small>ICU</small></span>
-              <span className='tag primary'><small>General Wards</small></span>
-              <span className='tag primary'><small>Oncology</small></span>
-              <span className='tag primary'><small>Pediatrics</small></span>
-            </div>
-          </div>
-          <div className="card">
-            <h3 className='bold-5'>Defibrillators</h3>
-            <p className='mb-1'>Life-saving cardiac emergency equipment</p>
-            <p className='bold-5 mb-1'>Key Features:</p>
-            <ul className='mb-1'>
-              <li><LuCircleCheckBig /> Automated external defibrillation</li>
-              <li><LuCircleCheckBig /> Manual override capability</li>
-              <li><LuCircleCheckBig /> ECG monitoring</li>
-              <li><LuCircleCheckBig /> Voice prompts</li>
-              <li><LuCircleCheckBig /> Portable design</li>
-            </ul>
-            <p className='bold-5 mb-1'>Applications:</p>
-            <div className="tags-container flex gp-02 wrap">
-              <span className='tag primary'><small>ICU</small></span>
-              <span className='tag primary'><small>Emergency Response</small></span>
-              <span className='tag primary'><small>Cardiac Care</small></span>
-              <span className='tag primary'><small>Ambulances</small></span>
-            </div>
-          </div>
-          <div className="card">
-            <h3 className='bold-5'>Syringe Pumps</h3>
-            <p className='mb-1'>Precise medication delivery for critical care</p>
-            <p className='bold-5 mb-1'>Key Features:</p>
-            <ul className='mb-1'>
-              <li><LuCircleCheckBig /> High accuracy dosing</li>
-              <li><LuCircleCheckBig /> Multiple syringe sizes</li>
-              <li><LuCircleCheckBig /> Programmable delivery rates</li>
-              <li><LuCircleCheckBig /> Occlusion detection</li>
-              <li><LuCircleCheckBig /> Battery operation</li>
-            </ul>
-            <p className='bold-5 mb-1'>Applications:</p>
-            <div className="tags-container flex gp-02 wrap">
-              <span className='tag primary'><small>ICU</small></span>
-              <span className='tag primary'><small>NICU</small></span>
-              <span className='tag primary'><small>Anesthesia</small></span>
-              <span className='tag primary'><small>Pain Management</small></span>
-            </div>
-          </div>
-          {/* <div className="card">
-            <h3 className='bold-5'>Central Monitoring Systems</h3>
-            <p className='mb-1'>Centralized patient monitoring and management</p>
-            <p className='bold-5 mb-1'>Key Features:</p>
-            <ul className='mb-1'>
-              <li><LuCircleCheckBig /> Multi-bed monitoring</li>
-              <li><LuCircleCheckBig /> Real-time data display</li>
-              <li><LuCircleCheckBig /> Alarm management</li>
-              <li><LuCircleCheckBig /> Electronic medical records integration</li>
-              <li><LuCircleCheckBig /> Remote access capability</li>
-            </ul>
-            <p className='bold-5 mb-1'>Applications:</p>
-            <div className="tags-container flex gp-02 wrap">
-              <span className='tag primary'><small>ICU</small></span>
-              <span className='tag primary'><small>Step-down Units</small></span>
-              <span className='tag primary'><small>Emergency Departments</small></span>
-            </div>
-          </div> */}
+          
+          {criticalProducts.map((p, index) => (
+            <ProductCard
+              key={index}
+              title={p.title}
+              description={p.description}
+              features={p.features}
+              applications={p.applications}
+            />
+          ))}
         </div>
       </section>
 
@@ -179,8 +62,8 @@ function Products() {
                 <small>Advanced Healthcare Technology</small>
               </div>
             </div>
-              <p className='mb-2'>Yafho offers innovative critical care solutions with advanced monitoring capabilities and reliable performance.</p>
-              <a className='btn secondary' href="https://www.yafho.com/">View Yafho Products</a>
+            <p className='mb-2'>Yafho offers innovative critical care solutions with advanced monitoring capabilities and reliable performance.</p>
+            <a className='btn secondary' href="https://www.yafho.com/">View Yafho Products</a>
           </div>
         </div>
       </section>

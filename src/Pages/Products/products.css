@@ -10,15 +10,7 @@
             gap: 2rem;
         }
 
-        li {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-
-            svg {
-                color: var(--color-primary);
-            }
-        }
+       
     }
     section.partnerships{
         display: flex;

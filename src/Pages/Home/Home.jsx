@@ -3,11 +3,11 @@ import './home.css'
 import Hero from '../../Components/Hero/Hero'
 import Card from '../../Components/Card/Card'
 import { LuArrowRight, LuCircleCheckBig, LuHeart, LuMail, LuMapPin, LuPhone } from "react-icons/lu";
-import products from '../../data/products';
 import innovations from '../../data/innovations';
 import InnovationCard from '../../Components/InnovationCard/InnovationCard';
 import ET from '../../assets/et_tube.webp'
 import { useNavigate } from 'react-router-dom';
+import { products } from '../../data/products';
 
 
 function Home() {
@@ -26,8 +26,8 @@ function Home() {
         </div>
       </Hero>
 
-      {/* PRODUCTS */}
-      <section className='featured-product'>
+      {/*FEATURED PRODUCTS */}
+      {/* <section className='featured-product'>
         <h2 className='center'>Our Featured Product </h2>
         <p className='mb-2 center'>Our most trusted and widely adopted solution in healthcare facilities</p>
         <div className='featured-product-wrapper'>
@@ -60,11 +60,9 @@ function Home() {
                   <span className='tag primary'><small>Operating Theaters</small></span>
                   <span className='tag primary'><small>ICU</small></span>
                   <span className='tag primary'><small>Emergency Rooms</small></span>
-                  {/* <span className='tag primary'><small>COPD</small></span> */}
                 </div>
               </div>
               <div className="img-tag-wrapper">
-                {/* <img src="https://media.gettyimages.com/id/2177759074/photo/close-up-of-a-female-nurse-helping-a-woman-with-breathing-problems.jpg?b=1&s=2048x2048&w=0&k=20&c=pby1KA6dBTRm17mGVf9FGyLPvUNlV2X_5uCuqET017Q=" alt="" /> */}
                 <img src={ET} alt="" />
                 <span className='tag primary'><small>Featured Product</small></span>
               </div>
@@ -72,7 +70,7 @@ function Home() {
           </div>
 
         </div>
-      </section>
+      </section> */}
 
       <section className='products'>
         <h2>Our Product Categories</h2>
