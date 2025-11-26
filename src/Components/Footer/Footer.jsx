@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import Logo from '../../assets/logo.webp';
+import LogoLg from '../../assets/niveo_logo_lg.png'
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-details">
         <div className="about">
           <div className="name-wrapper">
-            <img src={Logo} alt="Logo" />
+            <img src={LogoLg} alt="Logo" />
             <h4>Niveo Healthcare</h4>
           </div>
           <small>Advancing healthcare technology through quality biomedical equipment sales and expert maintenance services</small>

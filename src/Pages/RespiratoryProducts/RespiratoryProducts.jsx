@@ -4,6 +4,7 @@ import Hero from '../../Components/Hero/Hero'
 import SANS from '../../assets/saans.png'
 import VAP from '../../assets/vap.webp'
 import FETAL from '../../assets/fetal.png'
+import ET from '../../assets/et_tube.webp'
 import { LuCircleCheckBig, LuPhone, LuShield, LuWind } from 'react-icons/lu'
 import { useNavigate } from 'react-router-dom'
 
@@ -74,17 +75,17 @@ function RespiratoryProducts() {
                     <div className="card">
                         <div className="card-wrapper">
                             <div className="img-tag-wrapper">
-                                <img src={'https://i.guim.co.uk/img/media/60bba82aaeedb75bb5d1d50e51f5e64283ae491a/0_325_4879_2928/master/4879.jpg?width=620&dpr=1&s=none&crop=none'} alt="" />
+                                 <img src={ET} alt="" />
                             </div>
                             <div className="details-wrapper">
-                                <h4 className='mb-0'>Ventilator</h4>
-                                <p className='mb-1'>Advanced mechanical ventilator providing life-saving respiratory support for critically ill patients. Delivers precise oxygen and air mixture with multiple ventilation modes.</p>
+                                <h4 className='mb-0'>ET Tube Holder</h4>
+                                <p className='mb-1'>The Endotracheal (ET) Tube holder is an innovative device designed to provide safe, secure, and comfortable fixation of Endotracheal Tubes in intubated patients.</p>
                                 <p className='bold-5 mb-1'>Key features:</p>
                                 <ul className='mb-1'>
-                                    <li><LuCircleCheckBig /> Portable and user-friendly design</li>
-                                    <li><LuCircleCheckBig /> Continuous fetal heart rate monitoring</li>
-                                    <li><LuCircleCheckBig /> Non-invasive maternal monitoring</li>
-                                    <li><LuCircleCheckBig /> Suitable for clinical and home use</li>
+                                    <li><LuCircleCheckBig /> Prevents Accidental Extubation</li>
+                                    <li><LuCircleCheckBig /> Saves time for clinicians</li>
+                                    <li><LuCircleCheckBig /> Universal fit</li>
+                                    <li><LuCircleCheckBig /> Better oral access</li>
                                 </ul>
                                 <div className="tags-container">
                                     <span className='tag  primary'><small>Critical care</small></span>

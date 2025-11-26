@@ -1,11 +1,35 @@
-import React from 'react'
 import './contact.css'
 import Hero from '../../Components/Hero/Hero'
 import { LuClock, LuMail, LuMapPin, LuPhone } from 'react-icons/lu'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import emailjs from "emailjs-com";
 
 function Contact() {
   const navigate = useNavigate()
+
+  const [status, setStatus] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      e.target,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    .then(() => {
+      setStatus("Message sent!");
+      e.target.reset();
+    })
+    .catch((err) => {
+      console.error(err);
+      setStatus("Failed to send. Try again.");
+    });
+  };
+
   return (
     <div className="contact main-container">
       <Hero
@@ -16,12 +40,11 @@ function Contact() {
       >
       </Hero>
       <section className="form-info-wrapper">
-
         <div className="form-details-wrapper grid col-2 gp-2">
           <div className="card">
             <h3>Send Us a Message</h3>
             <p className='mb-3'>Fill out the form below and we'll get back to you as soon as possible</p>
-            <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+            {/* <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
               <div className="form-row">
                 <div className="form-field">
                   <label htmlFor="firstName">First Name</label>
@@ -59,6 +82,51 @@ function Contact() {
               <button type="submit" className="primary">
                 Send Message
               </button>
+            </form> */}
+
+            <form className="contact-form" onSubmit={sendEmail}>
+              <div className="form-row">
+                <div className="form-field">
+                  <label htmlFor="firstName">First Name</label>
+                  <input name="first_name" id="firstName" type="text" placeholder="John" required />
+                </div>
+
+                <div className="form-field">
+                  <label htmlFor="lastName">Last Name</label>
+                  <input name="last_name" id="lastName" type="text" placeholder="Doe" required />
+                </div>
+              </div>
+
+              <div className="form-field">
+                <label htmlFor="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="john.doe@example.com" required />
+              </div>
+
+              <div className="form-field">
+                <label htmlFor="phone">Phone Number</label>
+                <input name="phone" id="phone" type="tel" placeholder="+91 XXX XXX XXXX" />
+              </div>
+
+              <div className="form-field">
+                <label htmlFor="org">Organization</label>
+                <input name="org" id="org" type="text" placeholder="Hospital/Clinic Name" />
+              </div>
+
+              <div className="form-field">
+                <label htmlFor="subject">Subject</label>
+                <input name="subject" id="subject" type="text" placeholder="Product Inquiry" />
+              </div>
+
+              <div className="form-field">
+                <label htmlFor="message">Message</label>
+                <textarea name="message" id="message" rows="4" placeholder="Write your message here..." required />
+              </div>
+
+              <button type="submit" className="primary">
+                Send Message
+              </button>
+
+              {status && <p className="form-status">{status}</p>}
             </form>
           </div>
 

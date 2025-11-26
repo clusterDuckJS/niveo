@@ -5,7 +5,7 @@ import Card from '../../Components/Card/Card'
 import { LuArrowRight, LuCircleCheckBig, LuHeart, LuMail, LuMapPin, LuPhone } from "react-icons/lu";
 import innovations from '../../data/innovations';
 import InnovationCard from '../../Components/InnovationCard/InnovationCard';
-import ET from '../../assets/et_tube.webp'
+
 import { useNavigate } from 'react-router-dom';
 import { products } from '../../data/products';
 
@@ -25,52 +25,6 @@ function Home() {
           <button onClick={() => navigate('/contact')} className="blur">Contact Us</button>
         </div>
       </Hero>
-
-      {/*FEATURED PRODUCTS */}
-      {/* <section className='featured-product'>
-        <h2 className='center'>Our Featured Product </h2>
-        <p className='mb-2 center'>Our most trusted and widely adopted solution in healthcare facilities</p>
-        <div className='featured-product-wrapper'>
-          <div className="card">
-            <div className="card-wrapper">
-              <div className="details-wrapper">
-                <div className="heading-wrapper flex gp-1">
-                  <div className="svg-wrapper mb-1">
-                    <LuHeart size={36} />
-                  </div>
-                  <div className="heading-text-wrapper">
-                    <h4 className='mb-0'>ET Tube Holder</h4>
-                    <span className='tag primary'><small>Featured Product</small></span>
-                  </div>
-                </div>
-                <p className='mb-1'>The Endotracheal (ET) Tube holder (with or without bite block)
-                  is an innovative device designed to provide safe, secure, and comfortable fixation of Endotracheal Tubes in intubated patients. It eliminates the drawbacks of traditional adhesive taping methods by offering a fast, reliable, and skin-friendly solution for airway management.
-                  Its adjustable, cushioned design enhances both patient comfort and clinical efficiency, making it an essential tool in critical care settings.</p>
-                <p className='bold-5 mb-1'>Key benefits:</p>
-                <ul className='mb-1'>
-                  <li><LuCircleCheckBig /> Prevents Accidental Extubation</li>
-                  <li><LuCircleCheckBig /> Saves time for clinicians</li>
-                  <li><LuCircleCheckBig /> Enhances patient comfort</li>
-                  <li><LuCircleCheckBig /> Better oral access</li>
-                  <li><LuCircleCheckBig /> Universal fit</li>
-                  <li><LuCircleCheckBig /> Cost effective</li>
-                  <li><LuCircleCheckBig /> Disposable</li>
-                </ul>
-                <div className="tags-container">
-                  <span className='tag primary'><small>Operating Theaters</small></span>
-                  <span className='tag primary'><small>ICU</small></span>
-                  <span className='tag primary'><small>Emergency Rooms</small></span>
-                </div>
-              </div>
-              <div className="img-tag-wrapper">
-                <img src={ET} alt="" />
-                <span className='tag primary'><small>Featured Product</small></span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section> */}
 
       <section className='products'>
         <h2>Our Product Categories</h2>

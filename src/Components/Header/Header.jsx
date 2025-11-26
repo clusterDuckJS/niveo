@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './header.css'
-import Logo from '../../assets/logo.webp'
+import LogoLg from '../../assets/niveo_logo_lg.png'
 import { Link } from 'react-router-dom'
 import { LuAlignJustify } from 'react-icons/lu';
 
@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <header className="header">
-      <img src={Logo} alt="Logo" className="logo" />
+      <img src={LogoLg} alt="Logo" className="logo" />
 
       {/* Desktop nav */}
       <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
