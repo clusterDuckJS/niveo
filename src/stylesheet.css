@@ -15,34 +15,40 @@
     --color-hover: #3F3F3F;
 
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
     color: #242424;
     background-color: white;
 
     --step--2: clamp(0.7rem, 0.25vw + 0.55rem, 0.8rem);
+
     /* ~11–13px */
     --step--1: clamp(0.8rem, 0.35vw + 0.65rem, 0.9rem);
+
     /* ~13–14px */
     --step-0: clamp(0.9rem, 0.5vw + 0.7rem, 1rem);
+
     /* ~14–16px */
     --step-1: clamp(1.05rem, 1vw + 0.7rem, 1.15rem);
+
     /* ~16–18px */
     --step-2: clamp(1.2rem, 1.5vw + 0.75rem, 1.5rem);
+
     /* ~19–24px */
     --step-3: clamp(1.4rem, 2vw + 0.8rem, 1.6rem);
+
     /* ~22–26px */
     --step-4: clamp(1.6rem, 3.2vw + 0.85rem, 2rem);
+
     /* ~26–32px */
     --step-5: clamp(1.8rem, 4vw + 0.9rem, 2.8rem);
-
     --font-sans: system-ui, Avenir, Helvetica, Arial, sans-serif;
-
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+/* ================================================================= */
 
-/* ============================== */
 h1 {
     font-size: var(--step-5);
     font-weight: 700;
@@ -76,10 +82,6 @@ span {
 small {
     font-size: var(--step--2);
 }
-
-/* h1,h2,h3,h4,p,li,a,small{
-    color: var(--color-text);
-} */
 
 /* =================================================== */
 /* background colors */

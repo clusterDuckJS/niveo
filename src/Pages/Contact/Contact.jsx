@@ -44,53 +44,12 @@ function Contact() {
           <div className="card">
             <h3>Send Us a Message</h3>
             <p className='mb-3'>Fill out the form below and we'll get back to you as soon as possible</p>
-            {/* <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-              <div className="form-row">
-                <div className="form-field">
-                  <label htmlFor="firstName">First Name</label>
-                  <input id="firstName" type="text" placeholder="John" />
-                </div>
-                <div className="form-field">
-                  <label htmlFor="lastName">Last Name</label>
-                  <input id="lastName" type="text" placeholder="Doe" />
-                </div>
-              </div>
-              <div className="form-field">
-                <label htmlFor="email">Email</label>
-                <input id="email" type="email" placeholder="john.doe@example.com" />
-              </div>
-              <div className="form-field">
-                <label htmlFor="phone">Phone Number</label>
-                <input id="phone" type="tel" placeholder="+91 XXX XXX XXXX" />
-              </div>
-              <div className="form-field">
-                <label htmlFor="org">Organization</label>
-                <input id="org" type="text" placeholder="Hospital/Clinic Name" />
-              </div>
-              <div className="form-field">
-                <label htmlFor="subject">Subject</label>
-                <input id="subject" type="text" placeholder="Product Inquiry" />
-              </div>
-              <div className="form-field">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  rows="4"
-                  placeholder="Write your message here..."
-                />
-              </div>
-              <button type="submit" className="primary">
-                Send Message
-              </button>
-            </form> */}
-
             <form className="contact-form" onSubmit={sendEmail}>
               <div className="form-row">
                 <div className="form-field">
                   <label htmlFor="firstName">First Name</label>
                   <input name="first_name" id="firstName" type="text" placeholder="John" required />
                 </div>
-
                 <div className="form-field">
                   <label htmlFor="lastName">Last Name</label>
                   <input name="last_name" id="lastName" type="text" placeholder="Doe" required />
@@ -173,7 +132,6 @@ function Contact() {
                 <div className="contact-text-wrapper">
                   <p className='bold-5'>Business Hours</p>
                   <p>Mon-Sat: 9:00 AM - 6:00 PM</p>
-                  <p>Saturday: 9:00 AM - 2:00 PM</p>
                   <p>Sunday: Closed</p>
                   <p> 24/7 Emergency Support Available</p>
                 </div>

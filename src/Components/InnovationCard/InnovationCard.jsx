@@ -2,9 +2,8 @@ import React from 'react'
 import './innovation-card.css'
 import { useNavigate } from 'react-router-dom';
 
-function InnovationCard({ title, short, image, tag, long, icon: Icon, linkTo }) {
+function InnovationCard({ title, short, image, tag, long, icon: Icon }) {
 
-    const navigate = useNavigate();
   return (
     <div className="innovation-card">
       <div className="svg-wrapper md mb-1">
